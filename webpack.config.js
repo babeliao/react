@@ -14,6 +14,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './vendor.js',
+    // 添加 chunkFilename
+    chunkFilename: '[name].[chunkhash:5].chunk.js',
   },
   resolve: {
     extensions: ['', '.js', '.json'],
